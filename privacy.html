@@ -6,107 +6,347 @@
 <nav><a href="index.html">Fightdex</a><a href="terms.html">Terms</a></nav>
 
 <h1>Privacy Policy</h1>
-<p class="updated">Last updated: 20 August 2026</p>
+<p class="updated">Last updated: 5 September 2026</p>
 
 <h2>Summary</h2>
-<p>Fightdex is an <strong>offline, local-first</strong> app. It has no account
-system, no server, and no analytics. We do not collect, transmit, or have any
-access to your data.</p>
+<p>Fightdex is a <strong>local-first</strong> app. Your training log — sessions,
+techniques, combinations, notes, your profile — is written to a database file on
+your device and is never uploaded. That is true of every version of the app, and
+it is true whether or not you sign in.</p>
+<p>One feature, and only one, needs a server: having an opponent
+<strong>confirm a fight</strong> so your record means something to someone other
+than you. That feature requires an account, the account is optional, and
+everything the app sends is listed below.</p>
 
-<h2>What data the app stores</h2>
-<p>Everything you enter — training sessions, gyms, coaches, notes, techniques,
-combinations, and your profile details — is written to a database file in the
-app's private storage on your device. It is never uploaded.</p>
+<h2>Which version you have</h2>
+<p>Fightdex is built in two configurations:</p>
+<ul>
+<li><strong>Local-only.</strong> No account, no sign-in screen, no network code
+paths at all. Nothing in "The optional account" below can happen, because there
+is nothing to sign in to.</li>
+<li><strong>With verification.</strong> Adds an Account screen where you can
+sign in with your email address.</li>
+</ul>
+<p>You can tell which one you have by looking: <strong>if the app has no
+Account screen, the whole second half of this policy does not apply to
+you.</strong></p>
 
-<h2>What we collect</h2>
-<p><strong>Nothing.</strong> The developer has no server and receives no
-information about you, your device, or your use of the app.</p>
+<h2 id="on-device">Part 1 — what stays on your device</h2>
+<p>Everything you enter is stored locally: training sessions, gyms, coaches,
+notes, "what went well" and "to improve", techniques, combinations, your
+profile, your fight record, and any evidence files (photos, video links,
+documents) you attach to a fight.</p>
+<p><strong>None of this is uploaded</strong>, in either configuration. There is
+no cloud sync of your training log. If you sign in, the list in Part 2 is
+exhaustive — anything not on it stays on the phone.</p>
 
-<h2>Network access</h2>
-<p>The app makes network requests only when you explicitly trigger one — for
-example, tapping a video link you attached to a technique. That request goes to
-the third party hosting the link (such as YouTube), under their own privacy
-policy, not ours.</p>
+<h3>Export</h3>
+<p>The export feature writes your data to a file and hands it to your device's
+share sheet. Where that file goes is entirely your choice — a messaging app, a
+cloud drive, email. Once you share it, the receiving service's privacy policy
+applies. The developer never receives a copy.</p>
 
-<h2>Exporting your data</h2>
-<p>The export feature writes your training history to a file and hands it to
-your device's share sheet. Where that file goes is entirely your choice — a
-messaging app, cloud drive, or email. Once you share it, the receiving service's
-privacy policy applies. The developer never receives a copy.</p>
-
-<h2>Notifications</h2>
+<h3>Notifications</h3>
 <p>Training reminders are scheduled locally by your device. No push server is
 involved and no data leaves your phone to deliver them.</p>
 
-<h2>Deleting your data</h2>
-<p>"Clear all data" in the Profile tab permanently erases everything stored on
-the device. Uninstalling the app has the same effect. Because we hold no copy,
-there is nothing for you to request from us and nothing for us to delete.</p>
+<h3>Network access</h3>
+<p>Apart from the account features below, the app makes a network request only
+when you explicitly trigger one — for example tapping a video link you attached
+to a technique. That request goes to the third party hosting the link (such as
+YouTube), under their privacy policy, not ours.</p>
+
+<h2 id="account">Part 2 — the optional account</h2>
+<p>This part applies only if the app offers sign-in <em>and</em> you choose to
+use it. Everything in Part 1 remains true regardless.</p>
+
+<h3>What we hold about you</h3>
+<ul>
+<li><strong>Your email address</strong> — used to send you a sign-in code, to
+confirm your address when you register, to send a recovery code if you forget
+your password, and to recognise you when you come back. It is stored by our
+authentication provider and is <strong>never shown to other fighters</strong>.</li>
+<li><strong>Your password, if you set one</strong> — you can sign in either with
+a code we email you, which stores no password at all, or with a password. A
+password is stored only as a salted hash by our authentication provider: we
+cannot read it, and it is never shown to anyone. It is checked against a public
+list of breached passwords when you choose it, so that a password already
+exposed elsewhere cannot be used here.</li>
+<li><strong>Your handle and display name</strong> — chosen by you. The handle is
+how another fighter tags you in a bout, so it is visible to fighters you share a
+bout with.</li>
+</ul>
+
+<h3>What is sent when you push a fight for confirmation</h3>
+<p>Only when you tag an opponent by their Fightdex handle, and only for that
+fight:</p>
+<ul>
+<li>the date</li>
+<li>the discipline and level (amateur, professional, exhibition)</li>
+<li>the result and the method</li>
+<li>the scheduled rounds and the round it ended in</li>
+<li>the weight class</li>
+<li>the location or event name, if you entered one</li>
+<li>your opponent's handle</li>
+</ul>
+<p>Your opponent is shown these facts and can confirm or dispute them. If they
+dispute it, the reason they type is shown to you.</p>
+
+<h3>What is never sent, even when you are signed in</h3>
+<p>Your training sessions. Your notes on a fight, including "what went well" and
+"to improve". Your techniques and combinations. Video links. Evidence files you
+attached to a fight. Your local profile details.</p>
+<p>And one deliberate omission worth stating plainly: <strong>if you record an
+opponent by typing their name rather than tagging a Fightdex handle, that name
+is never uploaded.</strong> A person who is not a user of this app has not
+agreed to be in its database, so their name stays on your device and that fight
+simply cannot be sent for confirmation.</p>
+
+<h3>Who can see what</h3>
+<p>Your profile and your bouts are readable by <strong>you, and by fighters you
+have actually shared a bout with</strong>. This is enforced by the database
+itself, per row, not by the app being polite. There is no public directory, no
+browsing other fighters, and no way to list the users of the app.</p>
+
+<h3>Why we are allowed to process it (GDPR Art. 6)</h3>
+<ul>
+<li><strong>Art. 6(1)(b) — performance of a contract.</strong> Your email,
+handle and the bouts you push exist to deliver the feature you asked for. There
+is no way to offer opponent confirmation without telling the opponent what they
+are confirming.</li>
+<li><strong>Art. 6(1)(f) — legitimate interests.</strong> Blocks, tagging
+limits and rate limits are processed to stop people using confirmation requests
+to harass each other. The interest is every user's, and the data involved is the
+minimum: who tagged whom, and how often.</li>
+</ul>
+
+<h3>Where it is stored, and who processes it</h3>
+<p>Account and bout data is held in a Postgres database hosted by
+<strong>Supabase</strong> (Supabase, Inc.), acting as our processor under a data
+processing agreement.</p>
+<p>No version with an Account screen has been released, so there is nothing on
+a server today. The region is named in this paragraph before a version that has
+one ships — an EU region, which keeps this a one-line answer rather than a
+transfer discussion. Were a region outside the EU ever used, the transfer
+mechanism would be named here as well.</p>
+<p>Apple and Google process your download and any purchase under their own
+policies; we receive no personal data from them.</p>
+
+<h3>How long it is kept</h3>
+<p>Your profile and bouts are kept until you delete your account. A bout is a
+record two fighters share, so deleting your account does not delete the other
+fighter's copy of a fight you both had — instead, your identity is removed from
+it and the fight remains on their record, with no handle, name or link back to
+you.</p>
+
+<h3>Deleting your account</h3>
+<p>You can delete your Fightdex account at any time, from
+<strong>Profile → Verified record → Delete account</strong> inside the app.
+Deleting it erases your profile, your handle, your password, your email address
+from our authentication provider, and your identity on every bout you were part
+of. Your handle is released and can be claimed by someone else.</p>
+<p>Your training log, your fight record and your evidence files are on your
+device and are <strong>not</strong> deleted — deleting an account removes what
+is on the server, not your own journal. Bouts on this device that an opponent
+had confirmed stop being marked as confirmed, because there is no longer an
+account behind them. Uninstalling the app removes the local database, but does
+not by itself delete a server-side account.</p>
+
+<h3>Your other rights under the GDPR</h3>
+<p>You have the right of access, correction, erasure, restriction, portability
+and objection over the data described in this Part, and the right to complain to
+a supervisory authority. For the data in Part 1 these rights are satisfied
+directly in the app — you can view, edit, export and delete everything yourself.
+For the account data, contact us at the address below.</p>
 
 <h2>Children</h2>
-<p>Fightdex is not directed at children under 13 and collects no data from
-anyone.</p>
+<p>Fightdex is not directed at children under 13. The account features require
+you to be at least 16, or the age of digital consent in your country if that is
+lower.</p>
 
-<h2>Your rights under the GDPR</h2>
-<p>The GDPR grants rights of access, correction, erasure, and portability over
-personal data held by a controller. Because Fightdex stores your data solely on
-your own device and the developer holds no copy, these rights are satisfied
-directly in the app: you can view, edit, export, and delete everything yourself
-at any time.</p>
+<h2>Analytics, advertising and tracking</h2>
+<p><strong>None.</strong> No analytics SDK, no advertising, no tracking
+identifiers, no crash reporter, no third-party SDK that phones home. If that
+changes, this page changes first.</p>
 
 <h2>Changes</h2>
-<p>If a future version adds cloud sync or any other feature that transmits data,
-this policy will be updated before that version ships, and the app will ask for
-your consent first.</p>
+<p>If a future version transmits anything not listed here, this policy will be
+updated before that version ships.</p>
 
 <h2>Contact</h2>
-<p class="todo">TODO before publishing: replace with your real support email
-address. Both app stores require a working contact.</p>
+<p>Questions about this policy, or about the data Fightdex holds on your
+device: <a href="mailto:support@fightdex.app">support@fightdex.app</a>.</p>
 
 <hr>
 
 <h1 lang="de">Datenschutzerklärung</h1>
-<p class="updated">Zuletzt aktualisiert: 20. August 2026</p>
+<p class="updated" lang="de">Zuletzt aktualisiert: 5. September 2026</p>
 
 <h2 lang="de">Zusammenfassung</h2>
-<p lang="de">Fightdex ist eine <strong>offline arbeitende App</strong>. Es gibt
-kein Benutzerkonto, keinen Server und keine Analyse-Werkzeuge. Es werden keine
-Daten erhoben oder übertragen.</p>
+<p lang="de">Fightdex arbeitet <strong>lokal zuerst</strong>. Dein Trainingslog
+— Einheiten, Techniken, Kombinationen, Notizen, dein Profil — liegt in einer
+Datenbank auf deinem Gerät und wird nicht hochgeladen. Das gilt für jede Version
+der App, mit und ohne Anmeldung.</p>
+<p lang="de">Nur eine einzige Funktion braucht einen Server: dass dein Gegner
+einen <strong>Kampf bestätigt</strong>, damit dein Record auch für andere
+belastbar ist. Diese Funktion setzt ein Konto voraus, das Konto ist freiwillig,
+und alles, was dabei übertragen wird, steht unten.</p>
 
-<h2 lang="de">Welche Daten die App speichert</h2>
-<p lang="de">Alle Eingaben — Trainingseinheiten, Gyms, Trainer, Notizen,
-Techniken, Kombinationen und Profildaten — werden in einer Datenbank im privaten
-Speicher deines Geräts abgelegt und niemals hochgeladen.</p>
+<h2 lang="de">Welche Version du hast</h2>
+<ul lang="de">
+<li><strong>Nur lokal.</strong> Kein Konto, kein Anmeldebildschirm, keine
+Server-Verbindung. Teil 2 kann gar nicht eintreten.</li>
+<li><strong>Mit Verifizierung.</strong> Zusätzlich ein Konto-Bildschirm, in dem
+du dich mit deiner E-Mail-Adresse anmelden kannst.</li>
+</ul>
+<p lang="de">Du erkennst es daran, ob die App einen Konto-Bildschirm hat.
+<strong>Ohne diesen Bildschirm gilt die gesamte zweite Hälfte dieser Erklärung
+nicht für dich.</strong></p>
 
-<h2 lang="de">Welche Daten wir erheben</h2>
-<p lang="de"><strong>Keine.</strong> Der Entwickler betreibt keinen Server und
-erhält keinerlei Informationen über dich, dein Gerät oder deine Nutzung.</p>
+<h2 lang="de">Teil 1 — was auf dem Gerät bleibt</h2>
+<p lang="de">Alle Eingaben werden lokal gespeichert: Trainingseinheiten, Gyms,
+Trainer, Notizen, „Was lief gut" und „Was verbessern", Techniken,
+Kombinationen, Profil, Kampfrecord und alle Nachweise (Fotos, Video-Links,
+Dokumente), die du einem Kampf anhängst.</p>
+<p lang="de"><strong>Nichts davon wird hochgeladen</strong> — in keiner
+Version. Es gibt keine Cloud-Synchronisation des Trainingslogs. Wenn du
+angemeldet bist, ist die Liste in Teil 2 abschließend: Was dort nicht steht,
+bleibt auf dem Telefon.</p>
 
-<h2 lang="de">Netzwerkzugriff</h2>
-<p lang="de">Netzwerkanfragen erfolgen nur, wenn du sie selbst auslöst — etwa
-beim Öffnen eines von dir hinterlegten Video-Links. Dafür gilt die
-Datenschutzerklärung des jeweiligen Anbieters.</p>
+<h3 lang="de">Export</h3>
+<p lang="de">Der Export schreibt deine Daten in eine Datei und übergibt sie dem
+Teilen-Dialog deines Geräts. Wohin die Datei geht, entscheidest allein du. Der
+Entwickler erhält keine Kopie.</p>
 
-<h2 lang="de">Datenexport</h2>
-<p lang="de">Der Export schreibt deine Trainingsdaten in eine Datei und übergibt
-sie dem Teilen-Dialog deines Geräts. Wohin die Datei geht, entscheidest allein
-du. Der Entwickler erhält keine Kopie.</p>
-
-<h2 lang="de">Benachrichtigungen</h2>
+<h3 lang="de">Benachrichtigungen</h3>
 <p lang="de">Trainings-Erinnerungen werden lokal auf deinem Gerät geplant. Es
 wird kein Push-Server verwendet.</p>
 
-<h2 lang="de">Löschung</h2>
-<p lang="de">„Alle Daten löschen" im Profil entfernt sämtliche auf dem Gerät
-gespeicherten Daten unwiderruflich. Das Deinstallieren der App hat dieselbe
-Wirkung.</p>
+<h3 lang="de">Netzwerkzugriff</h3>
+<p lang="de">Abgesehen von den Konto-Funktionen erfolgt eine Netzwerkanfrage
+nur, wenn du sie selbst auslöst — etwa beim Öffnen eines hinterlegten
+Video-Links. Dafür gilt die Datenschutzerklärung des jeweiligen Anbieters.</p>
 
-<h2 lang="de">Deine Rechte nach DSGVO</h2>
-<p lang="de">Da die Daten ausschließlich auf deinem Gerät liegen und der
-Entwickler keine Kopie besitzt, kannst du Auskunft, Berichtigung, Löschung und
-Übertragbarkeit jederzeit selbst in der App ausüben.</p>
+<h2 lang="de">Teil 2 — das freiwillige Konto</h2>
+<p lang="de">Dieser Teil gilt nur, wenn die App eine Anmeldung anbietet
+<em>und</em> du sie nutzt.</p>
+
+<h3 lang="de">Welche Daten wir über dich speichern</h3>
+<ul lang="de">
+<li><strong>Deine E-Mail-Adresse</strong> — für den Anmeldecode, zur
+Bestätigung deiner Adresse bei der Registrierung, für einen
+Wiederherstellungscode, falls du dein Passwort vergisst, und zur
+Wiedererkennung. Sie wird bei unserem Authentifizierungs-Dienstleister
+gespeichert und <strong>anderen Kämpfern nie angezeigt</strong>.</li>
+<li><strong>Dein Passwort, falls du eines setzt</strong> — du kannst dich
+wahlweise mit einem zugeschickten Code anmelden, wobei gar kein Passwort
+gespeichert wird, oder mit einem Passwort. Ein Passwort wird beim
+Authentifizierungs-Dienstleister nur als gesalzener Hash gespeichert: wir
+können es nicht lesen, und es wird niemandem angezeigt. Bei der Wahl wird es
+gegen eine öffentliche Liste geleakter Passwörter geprüft, damit ein anderswo
+bereits offengelegtes Passwort hier nicht verwendet werden kann.</li>
+<li><strong>Dein Handle und dein Anzeigename</strong> — von dir gewählt. Über
+das Handle markiert dich ein anderer Kämpfer in einem Kampf; es ist für
+Kämpfer sichtbar, mit denen du einen Kampf teilst.</li>
+</ul>
+
+<h3 lang="de">Was übertragen wird, wenn du einen Kampf zur Bestätigung sendest</h3>
+<p lang="de">Nur wenn du einen Gegner über sein Fightdex-Handle markierst, und
+nur für diesen Kampf:</p>
+<ul lang="de">
+<li>das Datum</li>
+<li>Disziplin und Niveau (Amateur, Profi, Exhibition)</li>
+<li>Ergebnis und Art des Ausgangs</li>
+<li>angesetzte Runden und Endrunde</li>
+<li>die Gewichtsklasse</li>
+<li>Ort bzw. Veranstaltung, falls angegeben</li>
+<li>das Handle deines Gegners</li>
+</ul>
+<p lang="de">Dein Gegner sieht diese Angaben und kann sie bestätigen oder
+bestreiten. Bestreitet er sie, wird dir die von ihm eingegebene Begründung
+angezeigt.</p>
+
+<h3 lang="de">Was auch bei Anmeldung nie übertragen wird</h3>
+<p lang="de">Deine Trainingseinheiten. Deine Notizen zu einem Kampf,
+einschließlich „Was lief gut" und „Was verbessern". Deine Techniken und
+Kombinationen. Video-Links. Angehängte Nachweise. Deine lokalen Profildaten.</p>
+<p lang="de">Und eine bewusste Auslassung: <strong>Wenn du einen Gegner als
+freien Namen einträgst statt ein Fightdex-Handle zu markieren, wird dieser Name
+nie übertragen.</strong> Wer die App nicht nutzt, hat einer Speicherung nicht
+zugestimmt — der Name bleibt auf deinem Gerät, und dieser Kampf kann nicht zur
+Bestätigung gesendet werden.</p>
+
+<h3 lang="de">Wer was sehen kann</h3>
+<p lang="de">Dein Profil und deine Kämpfe sind lesbar für <strong>dich und für
+Kämpfer, mit denen du tatsächlich einen Kampf geteilt hast</strong>. Das setzt
+die Datenbank zeilenweise selbst durch. Es gibt kein öffentliches Verzeichnis
+und keine Möglichkeit, die Nutzer der App aufzulisten.</p>
+
+<h3 lang="de">Rechtsgrundlagen (Art. 6 DSGVO)</h3>
+<ul lang="de">
+<li><strong>Art. 6 Abs. 1 lit. b — Vertragserfüllung.</strong> E-Mail, Handle
+und gesendete Kämpfe dienen der von dir angeforderten Funktion. Eine Bestätigung
+durch den Gegner ist ohne Übermittlung an den Gegner nicht möglich.</li>
+<li><strong>Art. 6 Abs. 1 lit. f — berechtigte Interessen.</strong> Blockierungen
+sowie Markierungs- und Ratenbegrenzungen dienen dem Schutz vor Belästigung durch
+Bestätigungsanfragen. Verarbeitet wird dafür nur, wer wen wie oft markiert.</li>
+</ul>
+
+<h3 lang="de">Speicherort und Auftragsverarbeiter</h3>
+<p lang="de">Konto- und Kampfdaten liegen in einer Postgres-Datenbank, gehostet
+von <strong>Supabase</strong> (Supabase, Inc.) als Auftragsverarbeiter auf
+Grundlage eines Auftragsverarbeitungsvertrags.</p>
+<p lang="de">Eine Version mit Konto-Bildschirm ist bisher nicht veröffentlicht;
+derzeit liegen also keine Daten auf einem Server. Die Region wird in diesem
+Absatz genannt, bevor eine solche Version erscheint — eine EU-Region, damit dies
+eine Zeile bleibt und keine Übermittlungsdiskussion. Käme je eine Region
+außerhalb der EU zum Einsatz, würde hier zusätzlich das Transfer-Instrument
+genannt.</p>
+<p lang="de">Apple und Google verarbeiten Download und etwaige Käufe nach ihren
+eigenen Bestimmungen; wir erhalten von dort keine personenbezogenen Daten.</p>
+
+<h3 lang="de">Speicherdauer</h3>
+<p lang="de">Profil und Kämpfe werden gespeichert, bis du dein Konto löschst.
+Ein Kampf ist ein gemeinsamer Datensatz zweier Kämpfer: Beim Löschen deines
+Kontos wird deine Identität aus dem Kampf entfernt, der Kampf selbst bleibt im
+Record des anderen Kämpfers bestehen — ohne Handle, Name oder Verweis auf
+dich.</p>
+
+<h3 lang="de">Konto löschen</h3>
+<p lang="de">Du kannst dein Fightdex-Konto jederzeit löschen, in der App unter
+<strong>Profil → Verifizierter Rekord → Konto löschen</strong>. Dabei werden
+dein Profil, dein Handle, dein Passwort, deine E-Mail-Adresse beim
+Authentifizierungs-Dienstleister und deine Identität in allen Kämpfen gelöscht,
+an denen du beteiligt warst. Dein Handle wird freigegeben und kann von jemand
+anderem beansprucht werden.</p>
+<p lang="de">Dein Trainingstagebuch, dein Kampfrekord und deine Nachweise
+liegen auf deinem Gerät und werden <strong>nicht</strong> gelöscht — das Löschen
+des Kontos entfernt, was auf dem Server liegt, nicht dein eigenes Tagebuch.
+Kämpfe auf diesem Gerät, die ein Gegner bestätigt hatte, gelten danach nicht
+mehr als bestätigt, weil kein Konto mehr dahintersteht. Das Deinstallieren der
+App entfernt die lokale Datenbank, löscht aber kein Konto auf dem Server.</p>
+
+<h3 lang="de">Deine weiteren Rechte nach DSGVO</h3>
+<p lang="de">Dir stehen Auskunft, Berichtigung, Löschung, Einschränkung,
+Datenübertragbarkeit und Widerspruch zu, ebenso das Beschwerderecht bei einer
+Aufsichtsbehörde. Für die Daten aus Teil 1 übst du diese Rechte direkt in der
+App aus. Für Kontodaten wende dich an die unten genannte Adresse.</p>
+
+<h2 lang="de">Kinder</h2>
+<p lang="de">Fightdex richtet sich nicht an Kinder unter 13 Jahren. Für die
+Konto-Funktionen musst du mindestens 16 Jahre alt sein bzw. das in deinem Land
+geltende Alter der digitalen Einwilligung erreicht haben.</p>
+
+<h2 lang="de">Analyse, Werbung und Tracking</h2>
+<p lang="de"><strong>Keine.</strong> Kein Analyse-SDK, keine Werbung, keine
+Tracking-Kennungen, kein Crash-Reporter. Sollte sich das ändern, wird zuerst
+diese Seite geändert.</p>
+
+<h2 lang="de">Änderungen</h2>
+<p lang="de">Überträgt eine künftige Version etwas, das hier nicht steht, wird
+diese Erklärung vorher aktualisiert.</p>
 
 <h2 lang="de">Kontakt</h2>
-<p class="todo" lang="de">TODO vor Veröffentlichung: echte Support-E-Mail-Adresse
-eintragen.</p>
+<p lang="de">Fragen zu dieser Erklärung oder zu den Daten, die Fightdex auf
+deinem Gerät speichert: <a href="mailto:support@fightdex.app">support@fightdex.app</a>.</p>
 </main></body></html>
