@@ -11,15 +11,34 @@
 <h2>Summary</h2>
 <p>Fightdex is a <strong>local-only</strong> app. Your training log — sessions,
 techniques, combinations, notes, your profile — is written to a database file on
-your device and is never uploaded. There is no account, no sign-in screen and no
-server. Nobody, including the developer, can see what you write in it.</p>
+your device. There is no account, no sign-in screen and no server, and
+<strong>Fightdex never uploads it</strong> — nobody, including the developer,
+can see what you write in it. Your own device backup is the one exception, and
+it is described below.</p>
 
 <h2 id="on-device">What stays on your device</h2>
 <p>Everything you enter is stored locally: training sessions, gyms, coaches,
 notes, "what went well" and "to improve", techniques, combinations and your
 profile.</p>
-<p><strong>None of this is uploaded.</strong> There is no cloud sync, and the
-app has no code that could send your log anywhere.</p>
+<p><strong>The app never uploads any of it.</strong> There is no cloud sync,
+and there is no code in Fightdex that could send your log anywhere.</p>
+
+<h3>Device backups</h3>
+<p>Your phone may copy the app's files as part of its own backup, which is not
+something Fightdex does or can see:</p>
+<ul>
+<li><strong>iPhone and iPad.</strong> If you have iCloud Backup switched on,
+iOS includes Fightdex's database in it, the same as any other app's documents.
+That copy is held by Apple under Apple's terms, and it is what lets your
+training history survive a lost phone. Switching iCloud Backup off, or
+excluding Fightdex in Settings, stops it.</li>
+<li><strong>Android.</strong> Fightdex opts out
+(<code>android:allowBackup="false"</code>), so your log is <em>not</em> copied
+to Google Drive by the system backup. Use the export below instead.</li>
+</ul>
+<p>This is stated plainly rather than engineered away: for an app with no
+server, your device's own backup is the only thing standing between a broken
+phone and a lost training history.</p>
 
 <h3>Export</h3>
 <p>The export feature writes your data to a file and hands it to your device's
@@ -71,17 +90,37 @@ device: <a href="mailto:support@fightdex.app">support@fightdex.app</a>.</p>
 <h2 lang="de">Zusammenfassung</h2>
 <p lang="de">Fightdex arbeitet <strong>ausschließlich lokal</strong>. Dein
 Trainingslog — Einheiten, Techniken, Kombinationen, Notizen, dein Profil —
-liegt in einer Datenbank auf deinem Gerät und wird nicht hochgeladen. Es gibt
-kein Konto, keinen Anmeldebildschirm und keinen Server. Niemand, auch der
-Entwickler nicht, kann sehen, was du einträgst.</p>
+liegt in einer Datenbank auf deinem Gerät. Es gibt kein Konto, keinen
+Anmeldebildschirm und keinen Server, und <strong>Fightdex lädt nichts
+hoch</strong> — niemand, auch der Entwickler nicht, kann sehen, was du
+einträgst. Die einzige Ausnahme ist die Datensicherung deines eigenen Geräts,
+siehe unten.</p>
 
 <h2 lang="de">Was auf dem Gerät bleibt</h2>
 <p lang="de">Alle Eingaben werden lokal gespeichert: Trainingseinheiten, Gyms,
 Trainer, Notizen, „Was lief gut" und „Was verbessern", Techniken,
 Kombinationen und dein Profil.</p>
-<p lang="de"><strong>Nichts davon wird hochgeladen.</strong> Es gibt keine
-Cloud-Synchronisation, und die App enthält keinen Code, der dein Log irgendwohin
-senden könnte.</p>
+<p lang="de"><strong>Die App lädt nichts davon hoch.</strong> Es gibt keine
+Cloud-Synchronisation, und Fightdex enthält keinen Code, der dein Log
+irgendwohin senden könnte.</p>
+
+<h3 lang="de">Gerätesicherungen</h3>
+<p lang="de">Dein Telefon kann die Dateien der App im Rahmen seiner eigenen
+Datensicherung kopieren. Das tut nicht Fightdex, und Fightdex sieht es auch
+nicht:</p>
+<ul lang="de">
+<li><strong>iPhone und iPad.</strong> Ist iCloud-Backup aktiviert, nimmt iOS die
+Datenbank von Fightdex mit auf — wie bei jeder anderen App. Diese Kopie liegt
+bei Apple unter Apples Bedingungen, und sie ist der Grund, warum dein
+Trainingsverlauf ein verlorenes Telefon überlebt. In den Einstellungen lässt
+sich das Backup ganz oder für Fightdex einzeln abschalten.</li>
+<li><strong>Android.</strong> Fightdex ist abgemeldet
+(<code>android:allowBackup="false"</code>), dein Log wird also
+<em>nicht</em> in Google Drive gesichert. Nutze stattdessen den Export.</li>
+</ul>
+<p lang="de">Das steht hier, statt technisch verhindert zu werden: Bei einer App
+ohne Server ist die Sicherung deines Geräts das Einzige, was zwischen einem
+defekten Telefon und einem verlorenen Trainingsverlauf steht.</p>
 
 <h3 lang="de">Export</h3>
 <p lang="de">Der Export schreibt deine Daten in eine Datei und übergibt sie dem
